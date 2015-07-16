@@ -1,8 +1,19 @@
-<% provide(:title, 'About Us') %>
-<h1>About Us</h1>
-<p>
-  The <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
-  is a project to make a book and screencasts to teach web development
-  with <a href="http://rubyonrails.org/">Ruby on Rails</a>. This
-  is the sample application for the tutorial.
+<% provide(:title, 'About') %>
+<h1>关于本站的介绍</h1>
+
+<p >
+本站用ruby on rails搭建而成。<br><br>
+我对ruby的定义==>一个编程语言，确切的说，是一个【彻底面向对象】，【动态的】，【对元编程友好的】，【擅长些领域专属语言DSL】的一个编程语言。<br><br>
+而rails是专用于Web的一种用ruby语言而写成的框架。<br><br>
+rails采取了约定大于配置的策略。这样就要求用rails来进行web开发，要非常熟悉rails框架才行。rails对于生手不够友好，但是这样做好处也是显而易见的，对于熟悉rails的开发者，可以免于太多的配置，节省很多时间。<br><br>
+rails采取了MVC的架构。这个web程序的核心是控制器controller，用于和数据库交互的model，和用于渲染生成浏览器可以解析的html页面的view。<br><br>
+本站采取的数据库是sqlite3和PostgreSQL，在测试阶段用的是sqlite3数据库，部署在生产系统上用的是PostgreSQL。<br><br>
+很多人对PostgreSQL不熟悉，这是一款非常优秀的关系型数据库，他诞生在计算机科学的圣地-加州伯克利分校,在它的发展尤其是早期发展中，黑客是主要的开发者和维护者。这也是为什么许多像metasploit这样顶尖的黑客工具首选PostgreSQL作为程序数据库的原因。<br><br>
+rails的开发依赖gem包管理系统，就像linux操作系统依赖apt-get或者yum这样的包管理工具一样。但是由于GWF的存在，导致大陆访问rubygem的速度像蜗牛一样慢，所幸一位早期的rails开发者搭建了一个rubygem的镜像站==>ruby.taobao.org。无数的人从中受益，在此感谢他。<br><br>
+rails环境的搭建比较麻烦，主要体现在gem和rails的版本依赖关系上，不同版本的rails严格依赖相应版本的gem。<br><br>
+代码托管在github.com/antig/rails下，欢迎fork，
+如果有好的建议，欢迎<a href=http://localhost:3000/contact>反馈给我</a>，多谢！
+
 </p>
+
+
