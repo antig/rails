@@ -15,5 +15,5 @@ SampleApp::Application.routes.draw do
   match '/about',   to: 'static_pages#about',   via: 'get'
   match '/contact', to: 'static_pages#contact', via: 'get'
   match '/me',      to: 'static_pages#me', via: 'get'
-  match '/thinks',      to: 'static_pages#thinks', via: 'get'
+  match '/thanks',      to: 'static_pages#thanks', via: 'get'
 end
