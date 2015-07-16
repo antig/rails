@@ -1,34 +1,17 @@
-<% if signed_in? %>
-  <div class="row">
-    <aside class="span4">
-      <section>
-        <%= render 'shared/user_info' %>
-      </section>
-      <section>
-        <%= render 'shared/stats' %>
-      </section>
-      <section>
-        <%= render 'shared/micropost_form' %>
-      </section>
-    </aside>
-    <div class="span8">
-      <h3>Micropost Feed</h3>
-      <%= render 'shared/feed' %>
-    </div>
-  </div>
-<% else %>
-  <div class="center hero-unit">
-    <h1>Welcome to the Sample App</h1>
+<% provide(:title, 'Home') %>
+<div class="center hero-unit">
+<h1>Welcome to my personal website ! </h1>
+<h2>
+This is the home page for the social - networking site.<br><br>
+</h2>
 
-    <h2>
-      This is the home page for the
-      <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
-      sample application.
-    </h2>
+<h2><font color=blue>
 
-    <%= link_to "Sign up now!", signup_path,
-                                class: "btn btn-large btn-primary" %>
-  </div>
+由于Kali-Linux系统和rails本身对中文的支持不好，之前网站开发的时候，<br>用某些浏览器访问会出现乱码，所以网站语言以英文为主</font>
+</h2>
 
-  <%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>
-<% end %>
+
+<%= link_to "Sign up now", signup_path, class: "btn btn-large btn-primary" %>
+</div>
+<%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>
+
